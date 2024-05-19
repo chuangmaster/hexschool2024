@@ -1,4 +1,5 @@
 body, *::after, *::before{
+    font-family: 'Noto Sans';
     box-sizing: border-box;
 }
 .container  {
@@ -6,23 +7,53 @@ body, *::after, *::before{
     margin: auto auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 24px;
 }
 .box{
     width: 636px;
     height: 538px;
-    margin-bottom: 16px;
-}
-
-.box h3{
-    font-size: 38px;
-    color: #3B3B3B;
-    line-height: 33.6px;
-}
-.box p{
-    font-size: 26px;
-    color: #919191;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 .box img{
     border-radius: 8px;
     border: 1px solid #F1F1F1;
+}
+.box .content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 24px;
+}
+.box .content .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.box .content .detail h3{
+    font-size: 28px;
+    color: #3B3B3B;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.box .content .detail p{
+    font-size: 16px;
+    color: #919191;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.box .content .category{
+    display: flex;
+    gap: 16px;
+}
+.box .content .category a{
+    text-decoration: none;
+    color: #3B3B3B;    
+    background: #F1F1F1;
+    padding: 4px 12px 4px 12px;
+    border-radius: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    display: block;
 }
