@@ -1,0 +1,28 @@
+body, *::after, *::before{
+    box-sizing: border-box;
+}
+.container  {
+    width: 1296px;
+    margin: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 636px;
+    height: 538px;
+    margin-bottom: 16px;
+}
+
+.box h3{
+    font-size: 38px;
+    color: #3B3B3B;
+    line-height: 33.6px;
+}
+.box p{
+    font-size: 26px;
+    color: #919191;
+}
+.box img{
+    border-radius: 8px;
+    border: 1px solid #F1F1F1;
+}
